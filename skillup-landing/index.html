@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillUp Summer 2026 – Bán trú hè trọn gói cho bé 4-12 tuổi tại Bình Thạnh, TP.HCM</title>
+  <meta name="description" content="SkillUp Summer 2026 – Bán trú hè 12 tuần cho bé 4-12 tuổi. 7 môn kỹ năng, sĩ số tối đa chỉ 15 bé/lớp, cập nhật Zalo mỗi ngày. Ưu đãi đến 1.500.000đ cho 10 suất đầu!" />
+  <meta property="og:title" content="SkillUp Summer 2026 – Một mùa hè con vui học mỗi ngày" />
+  <meta property="og:description" content="Bán trú hè trọn gói cho bé 4-12 tuổi. 7 môn kỹ năng – Sĩ số 15 bé/lớp – Ưu đãi 1.500.000đ!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23F26B7A'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Tailwind config + custom styles -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E2A78',
+            'primary-light': '#3B4BB8',
+            coral: '#F26B7A',
+            'coral-light': '#FFB5BC',
+            mint: '#5DD9C1',
+            sunny: '#FFD93D',
+            cream: '#FFFAF0',
+          },
+          fontFamily: {
+            sans: ['Be Vietnam Pro', 'sans-serif'],
+            display: ['Quicksand', 'sans-serif'],
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'pulse-slow': 'pulse 3s infinite',
+            'spin-slow': 'spin 8s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+    h1, h2, h3 { font-family: 'Quicksand', sans-serif; }
+
+    /* Gradient backgrounds */
+    .bg-hero {
+      background: linear-gradient(135deg, #FFFAF0 0%, #FFF5F0 50%, #F0F9FF 100%);
+    }
+    .bg-gradient-primary {
+      background: linear-gradient(135deg, #1E2A78 0%, #3B4BB8 100%);
+    }
+    .bg-gradient-coral {
+      background: linear-gradient(135deg, #F26B7A 0%, #FFB5BC 100%);
+    }
+    .bg-gradient-sunny {
+      background: linear-gradient(135deg, #FFD93D 0%, #FFE873 100%);
+    }
+
+    /* Glassmorphism */
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Hover effects */
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(30, 42, 120, 0.15);
+    }
+
+    /* Blob shapes */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #FFFAF0; }
+    ::-webkit-scrollbar-thumb { background: #F26B7A; border-radius: 5px; }
+
+    /* FAQ accordion */
+    .faq-item.active .faq-answer { max-height: 500px; padding-top: 1rem; }
+    .faq-item.active .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: all 0.4s ease; }
+    .faq-icon { transition: transform 0.3s ease; }
+
+    /* Float button pulse */
+    .pulse-ring {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 107, 122, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(242, 107, 122, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 107, 122, 0); }
+    }
+
+    /* Button shine effect */
+    .btn-shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-shine::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: left 0.6s;
+    }
+    .btn-shine:hover::before { left: 100%; }
+
+    /* Wave divider */
+    .wave-divider {
+      position: relative;
+      height: 80px;
+      overflow: hidden;
+    }
+
+    /* Confetti for success */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #FFD93D;
+      animation: confetti-fall 3s linear forwards;
+    }
+    @keyframes confetti-fall {
+      to { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-gray-800 overflow-x-hidden">
+
+  <!-- ============== HEADER ============== -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass shadow-sm transition-all" id="header">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-2">
+        <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778259359/logo_srh8nh.png" alt="SkillUp Logo" class="w-20 h-20 object-contain" />
+        <div>
+          <div class="font-bold text-primary text-lg leading-none">SKILL<span class="text-coral">UP</span></div>
+          <div class="text-xs text-gray-500">Summer 2026</div>
+        </div>
+      </a>
+
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
+        <a href="#about" class="hover:text-coral transition">Về chương trình</a>
+        <a href="#skills" class="hover:text-coral transition">7 môn kỹ năng</a>
+        <a href="#schedule" class="hover:text-coral transition">Lịch học</a>
+        <a href="#why" class="hover:text-coral transition">Vì sao chọn SkillUp</a>
+        <a href="#faq" class="hover:text-coral transition">FAQ</a>
+      </nav>
+
+      <!-- CTA button -->
+      <a href="#register" class="hidden md:inline-flex bg-coral hover:bg-coral/90 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-lg btn-shine">
+        🎁 Đăng ký ngay
+      </a>
+
+      <!-- Mobile menu button -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-primary" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <div class="px-4 py-4 flex flex-col gap-4 text-sm font-semibold">
+        <a href="#about" onclick="toggleMobileMenu()">Về chương trình</a>
+        <a href="#skills" onclick="toggleMobileMenu()">7 môn kỹ năng</a>
+        <a href="#schedule" onclick="toggleMobileMenu()">Lịch học</a>
+        <a href="#why" onclick="toggleMobileMenu()">Vì sao chọn SkillUp</a>
+        <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+        <a href="#register" onclick="toggleMobileMenu()" class="bg-coral text-white px-4 py-2 rounded-full text-center">Đăng ký ngay</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== HERO SECTION ============== -->
+  <section id="hero" class="relative bg-hero pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
+    <!-- Decorative blobs -->
+    <div class="blob bg-coral w-72 h-72 -top-20 -left-20"></div>
+    <div class="blob bg-mint w-96 h-96 top-40 -right-40"></div>
+    <div class="blob bg-sunny w-80 h-80 bottom-0 left-1/2"></div>
+
+    <!-- Floating decorations -->
+    <div class="absolute top-32 right-10 text-5xl animate-float opacity-60 hidden md:block">🎈</div>
+    <div class="absolute bottom-32 left-10 text-5xl animate-float opacity-60 hidden md:block" style="animation-delay: 1s;">⭐</div>
+    <div class="absolute top-1/2 right-1/4 text-4xl animate-bounce-slow opacity-50 hidden lg:block">✏️</div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: Text -->
+        <div data-aos="fade-right">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-2 rounded-full shadow-md mb-6 border border-coral/20">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span class="text-sm font-semibold text-primary">🎉 Tuyển sinh hè 2026 – Đang mở</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-4">
+            Một mùa hè <span class="text-coral">con vui học</span> mỗi ngày
+            <span class="block mt-2">Ba mẹ <span class="text-mint">an tâm</span> đi làm</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            Bán trú hè trọn gói <strong class="text-primary">12 tuần</strong> cho bé <strong class="text-primary">4 – 12 tuổi</strong> tại Bình Thạnh, TP.HCM.<br />
+            <span class="text-coral font-semibold">7 môn kỹ năng</span> · Sĩ số <span class="text-coral font-semibold">15 bé/lớp</span> · Cập nhật Zalo mỗi ngày.
+          </p>
+
+          <!-- Trust badges -->
+          <div class="flex flex-wrap gap-3 mb-8">
+            <span class="bg-white px-3 py-1.5 rounded-full text-xs font-semibold text-primary shadow-sm border border-gray-100">✅ 15 bé/lớp</span>
+            <span class="bg-white px-3 py-1.5 rounded-full text-xs font-semibold text-primary shadow-sm border border-gray-100">📱 Cập nhật Zalo mỗi ngày</span>
+            <span class="bg-white px-3 py-1.5 rounded-full text-xs font-semibold text-primary shadow-sm border border-gray-100">🍱 Bữa ăn dinh dưỡng</span>
+            <span class="bg-white px-3 py-1.5 rounded-full text-xs font-semibold text-primary shadow-sm border border-gray-100">🌅 Đón bé từ 7h sáng</span>
+          </div>
+
+          <!-- CTA buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#register" class="bg-coral hover:bg-coral/90 text-white font-bold px-8 py-4 rounded-full shadow-xl btn-shine text-center">
+              🎁 Nhận ưu đãi 1.500.000đ
+            </a>
+            <a href="tel:0888940800" class="bg-white hover:bg-gray-50 text-primary font-bold px-8 py-4 rounded-full shadow-md border-2 border-primary text-center">
+              📞 Gọi 0888.940.800
+            </a>
+          </div>
+        
+        </div>
+
+        <!-- Right: Hero image -->
+        <div class="relative" data-aos="fade-left">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778244874/Poster_Summer_2026-No-QR_ieiwyd.svg?w=800&h=900&fit=crop" alt="Trẻ em vui học" class="w-full h-[500px] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+          </div>
+
+          <!-- Floating cards -->
+          <div class="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl p-4 animate-float">
+            <div class="flex items-center gap-3">
+              <div class="text-3xl">🎨</div>
+              <div>
+                <div class="text-xs text-gray-500">Hôm nay con học</div>
+                <div class="font-bold text-primary text-sm">Vẽ sáng tạo</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 animate-float" style="animation-delay: 1.5s;">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-mint flex items-center justify-center">📱</div>
+              <div>
+                <div class="text-xs text-gray-500">Đã gửi báo cáo</div>
+                <div class="font-bold text-primary text-sm">Zalo mỗi ngày</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PAIN POINT SECTION ============== -->
+  <section class="py-16 lg:py-24 bg-white relative">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-coral/10 text-coral px-4 py-1 rounded-full text-sm font-semibold mb-3">💭 Có phải ba mẹ đang…</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-4">
+          Mùa hè đến rồi… <br />
+          Ba mẹ đã tìm được nơi phù hợp cho con chưa?
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Mỗi mùa hè, rất nhiều phụ huynh cũng có chung nỗi băn khoăn này. 
+          SkillUp luôn sẵn sàng đồng hành cùng ba mẹ.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-cream rounded-2xl p-6 card-hover border-l-4 border-coral" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl mb-3">😟</div>
+          <p class="text-gray-700 italic">"Cho con ở nhà cả ngày xem iPad… mình thấy có lỗi quá."</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-6 card-hover border-l-4 border-coral" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl mb-3">😰</div>
+          <p class="text-gray-700 italic">"Gửi trung tâm thì sợ con bị bỏ bê giữa đám đông."</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-6 card-hover border-l-4 border-coral" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl mb-3">🤔</div>
+          <p class="text-gray-700 italic">"Sợ đồ ăn không sạch, sợ cô không thật sự yêu trẻ."</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-6 card-hover border-l-4 border-coral" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-4xl mb-3">😩</div>
+          <p class="text-gray-700 italic">"Sợ con đi 3 tháng về quên hết kiến thức cũ."</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-6 card-hover border-l-4 border-coral" data-aos="fade-up" data-aos-delay="500">
+          <div class="text-4xl mb-3">😔</div>
+          <p class="text-gray-700 italic">"Muốn con học kỹ năng mà không biết tin nơi nào."</p>
+        </div>
+        <div class="bg-gradient-coral rounded-2xl p-6 text-white card-hover" data-aos="fade-up" data-aos-delay="600">
+          <div class="text-4xl mb-3">💛</div>
+          <p class="font-bold mb-2">Đây cũng là lý do</p>
+          <p class="font-extrabold text-xl">SkillUp Summer 2026 ra đời.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT / GIẢI PHÁP SECTION ============== -->
+  <section id="about" class="py-16 lg:py-24 bg-gradient-to-br from-cream to-white relative overflow-hidden">
+    <div class="blob bg-mint w-96 h-96 -top-20 -right-40"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-mint/20 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-3">🌟 SkillUp Summer 2026 là gì?</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          Không chỉ là <span class="line-through text-gray-400">nơi giữ trẻ</span>.<br />
+          Đây là một <span class="text-coral">mùa hè đáng nhớ</span> của con.
+        </h2>
+        <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+          Chương trình bán trú hè trọn gói <strong>12 tuần</strong> (01/06 – 21/08/2026), thiết kế cho bé <strong>4–12 tuổi</strong>: vừa <strong>ôn lại kiến thức</strong>, vừa <strong>khám phá 7 môn kỹ năng</strong>, vừa <strong>trải nghiệm</strong> thật nhiều niềm vui mỗi ngày.
+        </p>
+      </div>
+
+      <!-- Một ngày tại SkillUp - Timeline -->
+      <div class="bg-white rounded-3xl shadow-xl p-6 md:p-10" data-aos="fade-up">
+        <h3 class="text-2xl md:text-3xl font-bold text-primary text-center mb-8">
+          ⏰ Một ngày của con tại SkillUp
+        </h3>
+
+        <div class="grid md:grid-cols-4 gap-4">
+          <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-5 text-center card-hover">
+            <div class="text-4xl mb-2">🌅</div>
+            <div class="font-bold text-primary mb-1">7h00 – 8h30</div>
+            <div class="text-sm text-gray-600">Đón bé · Đọc sách · Ăn sáng nhẹ</div>
+          </div>
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-5 text-center card-hover">
+            <div class="text-4xl mb-2">📚</div>
+            <div class="font-bold text-primary mb-1">8h30 – 11h</div>
+            <div class="text-sm text-gray-600">Rèn chữ · Toán tư duy · Cờ vua</div>
+          </div>
+          <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-5 text-center card-hover">
+            <div class="text-4xl mb-2">🍱</div>
+            <div class="font-bold text-primary mb-1">11h – 14h30</div>
+            <div class="text-sm text-gray-600">Ăn trưa · Ngủ trưa thư giãn · Ăn xế</div>
+          </div>
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-5 text-center card-hover">
+            <div class="text-4xl mb-2">🎨</div>
+            <div class="font-bold text-primary mb-1">14h30 – 16h30</div>
+            <div class="text-sm text-gray-600">Vẽ · Dance · Tiếng Anh · Thủ công</div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <div class="inline-flex items-center gap-2 bg-mint/20 px-4 py-2 rounded-full text-sm text-primary font-semibold">
+            🎉 Mỗi <strong>thứ Sáu</strong> là <strong>Happy Friday</strong> – ngày con mong đợi nhất tuần!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 7 MÔN KỸ NĂNG SECTION ============== -->
+  <section id="skills" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-coral/10 text-coral px-4 py-1 rounded-full text-sm font-semibold mb-3">🎯 Chương trình học</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          7 môn kỹ năng – 7 cánh cửa<br />
+          khám phá <span class="text-coral">tiềm năng của con</span>
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">♟️</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Cờ Vua</h3>
+          <p class="text-sm text-gray-700">Tư duy logic, kiên nhẫn, chiến lược – môn được phụ huynh yêu thích nhất.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">🎨</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Vẽ Sáng Tạo</h3>
+          <p class="text-sm text-gray-700">Cảm thụ thẩm mỹ, thể hiện cảm xúc qua màu sắc, làm thủ công.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">📚</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Tiền Tiểu Học</h3>
+          <p class="text-sm text-gray-700">Sẵn sàng vào lớp 1 với toán tư duy, làm quen mặt chữ, đọc cơ bản.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="250">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">✏️</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Rèn Chữ</h3>
+          <p class="text-sm text-gray-700">Chữ đẹp, ngay ngắn, tỉ mỉ – rèn cả tính kiên trì cho con.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">💃</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Dance Kid</h3>
+          <p class="text-sm text-gray-700">Tự tin biểu diễn, vận động khoẻ mạnh, kết hợp thanh nhạc.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="350">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">🗣️</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Tiếng Anh giao tiếp</h3>
+          <p class="text-sm text-gray-700">Phản xạ tự nhiên, dạn dĩ – có cuộc thi thuyết trình tiếng Anh.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-3xl p-6 card-hover" data-aos="zoom-in" data-aos-delay="400">
+          <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-4xl shadow-md mb-4">🌳</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Hoạt động trải nghiệm</h3>
+          <p class="text-sm text-gray-700">Dã ngoại, tham quan bảo tàng, làm bánh, kỹ năng sống.</p>
+        </div>
+
+        <!-- Card 8 - CTA -->
+        <div class="bg-gradient-coral rounded-3xl p-6 card-hover text-white flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="450">
+          <div class="text-4xl mb-3">✨</div>
+          <h3 class="font-bold text-xl mb-2">Đăng ký ngay</h3>
+          <p class="text-sm mb-4 opacity-90">Để con khám phá hết 7 cánh cửa tài năng!</p>
+          <a href="#register" class="bg-white text-coral px-4 py-2 rounded-full text-sm font-bold text-center hover:bg-cream">Tìm hiểu thêm →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== LỊCH HỌC SECTION ============== -->
+  <section id="schedule" class="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-cream">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-3">📅 Lịch học chi tiết</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          Một tuần học của con<br />
+          tại <span class="text-coral">SkillUp Summer</span>
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Lịch học cân bằng giữa <strong>học thuật – sáng tạo – vận động – nghỉ ngơi</strong></p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex justify-center gap-3 mb-8" data-aos="fade-up">
+        <button onclick="switchTab('preschool')" id="tab-preschool" class="tab-btn active bg-coral text-white px-6 py-2.5 rounded-full font-semibold shadow-md">
+          👶 Tiền Tiểu Học
+        </button>
+        <button onclick="switchTab('primary')" id="tab-primary" class="tab-btn bg-white text-primary px-6 py-2.5 rounded-full font-semibold shadow-md border border-primary/20">
+          🎒 Tiểu Học
+        </button>
+      </div>
+
+      <!-- Schedule table -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden" data-aos="fade-up">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gradient-primary text-white">
+                <th class="p-4 text-left">Thời gian</th>
+                <th class="p-4">Thứ 2</th>
+                <th class="p-4">Thứ 3</th>
+                <th class="p-4">Thứ 4</th>
+                <th class="p-4">Thứ 5</th>
+                <th class="p-4 bg-coral">Thứ 6 🎉</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-gray-500 mt-4">📌 Trung tâm đón bé từ <strong>7h sáng</strong> · Tan học <strong>16h30</strong> · Thứ 2 – Thứ 6</p>
+    </div>
+  </section>
+
+  <!-- ============== HAPPY FRIDAY 12 TUẦN ============== -->
+  <section class="py-16 lg:py-24 bg-gradient-sunny relative overflow-hidden">
+    <div class="absolute top-10 right-10 text-6xl animate-float opacity-30">🌴</div>
+    <div class="absolute bottom-10 left-10 text-6xl animate-float opacity-30" style="animation-delay: 1s;">🦀</div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-white px-4 py-1 rounded-full text-sm font-bold text-coral mb-3">🎉 HAPPY FRIDAY</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          12 tuần – 12 trải nghiệm<br />
+          con sẽ <span class="text-coral">kể đi kể lại</span>
+        </h2>
+        <p class="text-primary/80 max-w-2xl mx-auto text-lg">Mỗi thứ Sáu là một ngày đặc biệt – không phải lớp học – là ngày con mong đợi nhất trong tuần!</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Tuần 1-12 -->
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="50">
+          <div class="text-3xl mb-2">🧁</div>
+          <div class="text-xs font-bold text-coral">Tuần 1</div>
+          <div class="font-bold text-primary text-sm">Workshop làm bánh</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="100">
+          <div class="text-3xl mb-2">🎤</div>
+          <div class="text-xs font-bold text-coral">Tuần 2</div>
+          <div class="font-bold text-primary text-sm">Sân khấu tài năng nhí</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <div class="text-3xl mb-2">🍭</div>
+          <div class="text-xs font-bold text-coral">Tuần 3</div>
+          <div class="font-bold text-primary text-sm">Liên hoan cuối tuần</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-3xl mb-2">♟️</div>
+          <div class="text-xs font-bold text-coral">Tuần 4</div>
+          <div class="font-bold text-primary text-sm">Giải Cờ Vua Thiếu Nhi</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="250">
+          <div class="text-3xl mb-2">🍬</div>
+          <div class="text-xs font-bold text-coral">Tuần 5</div>
+          <div class="font-bold text-primary text-sm">Workshop kẹo dẻo</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-3xl mb-2">🎬</div>
+          <div class="text-xs font-bold text-coral">Tuần 6</div>
+          <div class="font-bold text-primary text-sm">Movie Day</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="350">
+          <div class="text-3xl mb-2">🏛️</div>
+          <div class="text-xs font-bold text-coral">Tuần 7</div>
+          <div class="font-bold text-primary text-sm">Tham quan bảo tàng</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="400">
+          <div class="text-3xl mb-2">🎙️</div>
+          <div class="text-xs font-bold text-coral">Tuần 8</div>
+          <div class="font-bold text-primary text-sm">Thuyết trình tiếng Anh</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="450">
+          <div class="text-3xl mb-2">🌿</div>
+          <div class="text-xs font-bold text-coral">Tuần 9</div>
+          <div class="font-bold text-primary text-sm">Dã ngoại / Liên hoan</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="500">
+          <div class="text-3xl mb-2">🏆</div>
+          <div class="text-xs font-bold text-coral">Tuần 10</div>
+          <div class="font-bold text-primary text-sm">Summer Chess Cup</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="550">
+          <div class="text-3xl mb-2">📔</div>
+          <div class="text-xs font-bold text-coral">Tuần 11</div>
+          <div class="font-bold text-primary text-sm">Nhật ký mùa hè</div>
+        </div>
+        <div class="bg-gradient-coral rounded-2xl p-5 shadow-md card-hover text-white" data-aos="zoom-in" data-aos-delay="600">
+          <div class="text-3xl mb-2">🎊</div>
+          <div class="text-xs font-bold">Tuần 12</div>
+          <div class="font-bold text-sm">Talent Show & Tổng Kết</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 6 LÝ DO AN TÂM ============== -->
+  <section id="why" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-mint/20 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-3">🛡️ Vì sao ba mẹ tin SkillUp?</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          6 lý do ba mẹ <span class="text-coral">hoàn toàn an tâm</span><br />
+          khi gửi con tại SkillUp
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-3xl p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center text-2xl mb-4 shadow-md">👥</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Sĩ số tối đa chỉ 15 bé/lớp</h3>
+          <p class="text-gray-600">Mỗi em đều là tâm điểm của sự chú ý, được yêu thương và rèn luyện kỹ năng.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-3xl p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 rounded-2xl bg-coral text-white flex items-center justify-center text-2xl mb-4 shadow-md">📱</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Cập nhật Zalo mỗi ngày</h3>
+          <p class="text-gray-600">Hình ảnh, hoạt động, bữa ăn của con sẽ được cập nhật vào cuối ngày.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-50 to-white border border-green-100 rounded-3xl p-6 card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-14 h-14 rounded-2xl bg-mint text-white flex items-center justify-center text-2xl mb-4 shadow-md">🚪</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Ghé thăm con bất cứ lúc nào</h3>
+          <p class="text-gray-600">SkillUp luôn sẵn sàng đón ba mẹ.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-yellow-50 to-white border border-yellow-100 rounded-3xl p-6 card-hover" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-14 h-14 rounded-2xl bg-sunny text-primary flex items-center justify-center text-2xl mb-4 shadow-md">🍱</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Bữa ăn dinh dưỡng chuẩn</h3>
+          <p class="text-gray-600">Thực đơn cân bằng, đảm bảo vệ sinh, con ăn ngon và có đủ năng lượng mỗi ngày.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-purple-50 to-white border border-purple-100 rounded-3xl p-6 card-hover" data-aos="fade-up" data-aos-delay="500">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500 text-white flex items-center justify-center text-2xl mb-4 shadow-md">💝</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Đội ngũ giáo viên yêu trẻ, tâm huyết </h3>
+          <p class="text-gray-600">Không chỉ dạy con, các cô còn lắng nghe, và đồng hành cùng con mỗi ngày.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-teal-50 to-white border border-teal-100 rounded-3xl p-6 card-hover" data-aos="fade-up" data-aos-delay="600">
+          <div class="w-14 h-14 rounded-2xl bg-teal-500 text-white flex items-center justify-center text-2xl mb-4 shadow-md">🏫</div>
+          <h3 class="font-bold text-xl text-primary mb-2">Không gian hiện đại, an toàn</h3>
+          <p class="text-gray-600">Phòng học sáng – sạch – đầy đủ dụng cụ học tập và vui chơi cho con.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GALLERY ============== -->
+  <section class="py-16 lg:py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-coral/10 text-coral px-4 py-1 rounded-full text-sm font-semibold mb-3">📸 Khoảnh khắc thật</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          Những nụ cười <span class="text-coral">thật tươi</span><br />
+          của các bé tại SkillUp
+        </h2>
+        <p class="text-gray-600 italic">Niềm vui mỗi ngày.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778229760/IMG_3400_nggycb.jpg?w=400&h=400&fit=crop" alt="Lớp vẽ" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778233931/IMG_20251228_101037_mcdlbj.jpg?w=400&h=400&fit=crop" alt="Bé vẽ tranh" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778251931/757491168588385850_veo2za.jpg?w=400&h=400&fit=crop" alt="Bé vẽ tranh" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778229760/IMG_1421_brtjou.jpg?w=400&h=400&fit=crop" alt="Cờ vua" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778229767/IMG_1397_b4uvwb.jpg?w=400&h=400&fit=crop" alt="Cờ vua" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778233931/IMG_20251213_111040_jy1ckf.jpg?w=400&h=400&fit=crop" alt="Cờ vua" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778230635/IMG_20260426_170924_nrs5pq.jpg?w=400&h=400&fit=crop" alt="Cờ vua" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778230634/IMG_20260426_164237_o8ecm7.jpg?w=600&h=800&fit=crop" alt="Cờ vua" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover row-span-2" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778252891/3693603978804110900_df7sxy.jpg?w=400&h=400&fit=crop" alt="Cờ vua" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778252891/3553995771745235847_bgvhv7.jpg?w=400&h=400&fit=crop" alt="Đọc sách" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778229759/IMG_1525_fbskpd.jpg?w=400&h=400&fit=crop" alt="Đọc sách" class="w-full h-48 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md card-hover" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778229760/IMG_1178_c1o5y9.jpg?w=400&h=400&fit=crop" alt="Dance" class="w-full h-48 object-cover" />
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ƯU ĐÃI + COUNTDOWN ============== -->
+  <section class="py-16 lg:py-24 bg-gradient-primary relative overflow-hidden">
+    <div class="absolute top-10 left-10 text-6xl opacity-20">🎁</div>
+    <div class="absolute bottom-10 right-10 text-6xl opacity-20">⭐</div>
+
+    <div class="max-w-5xl mx-auto px-4 relative z-10">
+      <div class="text-center text-white" data-aos="fade-up">
+        <span class="inline-block bg-coral text-white px-4 py-1 rounded-full text-sm font-bold mb-4 animate-pulse">🔥 ƯU ĐÃI GIỚI HẠN</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
+          Chỉ dành cho <span class="text-sunny">10 ba mẹ</span> nhanh tay nhất!
+        </h2>
+        <p class="text-lg opacity-90 mb-8">Đăng ký trước <strong class="text-sunny">15/05/2026</strong> – Nhận trọn bộ 3 quà tặng giá trị</p>
+
+        <!-- Countdown -->
+        <div class="grid grid-cols-4 gap-3 md:gap-6 max-w-2xl mx-auto mb-10" id="countdown">
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-6 border border-white/20">
+            <div class="text-3xl md:text-5xl font-extrabold text-sunny" id="cd-days">--</div>
+            <div class="text-xs md:text-sm uppercase mt-1 opacity-80">Ngày</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-6 border border-white/20">
+            <div class="text-3xl md:text-5xl font-extrabold text-sunny" id="cd-hours">--</div>
+            <div class="text-xs md:text-sm uppercase mt-1 opacity-80">Giờ</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-6 border border-white/20">
+            <div class="text-3xl md:text-5xl font-extrabold text-sunny" id="cd-mins">--</div>
+            <div class="text-xs md:text-sm uppercase mt-1 opacity-80">Phút</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-6 border border-white/20">
+            <div class="text-3xl md:text-5xl font-extrabold text-sunny" id="cd-secs">--</div>
+            <div class="text-xs md:text-sm uppercase mt-1 opacity-80">Giây</div>
+          </div>
+        </div>
+
+        <!-- 3 quà tặng -->
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
+            <div class="text-4xl mb-2">💰</div>
+            <div class="font-bold mb-1">Giảm đến 1.500.000đ</div>
+            <div class="text-sm opacity-80">Học phí trọn gói 12 tuần</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
+            <div class="text-4xl mb-2">👕</div>
+            <div class="font-bold mb-1">Tặng đồng phục</div>
+            <div class="text-sm opacity-80">SkillUp Center</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
+            <div class="text-4xl mb-2">🌿</div>
+            <div class="font-bold mb-1">Tặng dã ngoại</div>
+            <div class="text-sm opacity-80">Trải nghiệm cho bé</div>
+          </div>
+        </div>
+
+        <a href="#register" class="inline-flex items-center gap-2 bg-coral hover:bg-coral/90 text-white font-bold px-10 py-4 rounded-full shadow-2xl btn-shine text-lg">
+          🎁 GIỮ SUẤT NGAY
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FORM ĐĂNG KÝ ============== -->
+  <section id="register" class="py-16 lg:py-24 bg-cream relative overflow-hidden">
+    <div class="blob bg-coral w-72 h-72 top-0 -left-20"></div>
+    <div class="blob bg-mint w-72 h-72 bottom-0 -right-20"></div>
+
+    <div class="max-w-5xl mx-auto px-4 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left -->
+        <div data-aos="fade-right">
+          <span class="inline-block bg-coral/10 text-coral px-4 py-1 rounded-full text-sm font-semibold mb-3">📝 Đăng ký tư vấn</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+            Để lại thông tin<br />
+            SkillUp gọi <span class="text-coral">trong 15 phút</span>
+          </h2>
+          <p class="text-gray-700 mb-6 text-lg">Ba mẹ chỉ mất 30 giây để đăng ký – SkillUp sẽ tư vấn chi tiết, giữ ưu đãi và sắp xếp lịch tham quan trung tâm.</p>
+
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3"><span class="text-mint text-xl">✓</span><span>Tư vấn <strong>miễn phí</strong>, không ép buộc đăng ký</span></li>
+            <li class="flex items-start gap-3"><span class="text-mint text-xl">✓</span><span>Nhận lịch học chi tiết & bảng giá ưu đãi</span></li>
+            <li class="flex items-start gap-3"><span class="text-mint text-xl">✓</span><span>Đặt lịch <strong>tham quan trung tâm</strong> cùng bé</span></li>
+            <li class="flex items-start gap-3"><span class="text-mint text-xl">✓</span><span>Bảo mật thông tin – không spam</span></li>
+          </ul>
+        
+        </div>
+
+        <!-- Right: Form -->
+        <div data-aos="fade-left">
+          <form id="registerForm" class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 border-t-4 border-coral">
+            <h3 class="text-2xl font-bold text-primary text-center mb-2">🌞 Đăng ký giữ ưu đãi</h3>
+            <p class="text-center text-sm text-gray-500 mb-6">Tiết kiệm đến <strong class="text-coral">1.500.000đ</strong></p>
+
+            <div class="space-y-4">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1">Họ tên ba/mẹ <span class="text-coral">*</span></label>
+                <input type="text" name="hoTen" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-coral focus:ring-2 focus:ring-coral/20 outline-none transition" placeholder="VD: Nguyễn Thị Lan" />
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1">Số điện thoại (Zalo) <span class="text-coral">*</span></label>
+                <input type="tel" name="soDienThoai" required pattern="[0-9]{9,11}" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-coral focus:ring-2 focus:ring-coral/20 outline-none transition" placeholder="VD: 0901234567" />
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1">Tuổi của bé</label>
+                <select name="tuoiBe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-coral focus:ring-2 focus:ring-coral/20 outline-none transition">
+                  <option value="">-- Chọn độ tuổi --</option>
+                  <option value="4">4 tuổi</option>
+                  <option value="5">5 tuổi</option>
+                  <option value="6">6 tuổi</option>
+                  <option value="7">7 tuổi</option>
+                  <option value="8">8 tuổi</option>
+                  <option value="9">9 tuổi</option>
+                  <option value="10">10 tuổi</option>
+                  <option value="11">11 tuổi</option>
+                  <option value="12">12 tuổi</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Ba mẹ quan tâm môn nào? <span class="text-gray-400 text-xs">(có thể chọn nhiều)</span></label>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer">
+                    <input type="checkbox" name="monQuanTam" value="Tiền Tiểu Học" class="text-coral" /> 📚 Tiền Tiểu Học
+                  </label>
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer">
+                    <input type="checkbox" name="monQuanTam" value="Rèn Chữ" class="text-coral" /> ✏️ Rèn Chữ
+                  </label>
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer">
+                    <input type="checkbox" name="monQuanTam" value="Cờ Vua" class="text-coral" /> ♟️ Cờ Vua
+                  </label>
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer">
+                    <input type="checkbox" name="monQuanTam" value="Vẽ Sáng Tạo" class="text-coral" /> 🎨 Vẽ Sáng Tạo
+                  </label>
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer">
+                    <input type="checkbox" name="monQuanTam" value="Dance Kid" class="text-coral" /> 💃 Dance Kid
+                  </label>
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer">
+                    <input type="checkbox" name="monQuanTam" value="Tiếng Anh" class="text-coral" /> 🗣️ Tiếng Anh
+                  </label>
+                  <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 hover:bg-coral/5 cursor-pointer col-span-2">
+                    <input type="checkbox" name="monQuanTam" value="Toàn bộ chương trình bán trú" class="text-coral" checked /> 🌟 Toàn bộ chương trình bán trú
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" id="submitBtn" class="w-full bg-coral hover:bg-coral/90 text-white font-bold py-4 rounded-xl shadow-lg btn-shine text-lg transition">
+                <span id="submitText">🎁 GỬI THÔNG TIN - NHẬN TƯ VẤN</span>
+                <span id="submitLoading" class="hidden">⏳ Đang gửi...</span>
+              </button>
+
+              <p class="text-xs text-center text-gray-500">🔒 SkillUp cam kết bảo mật thông tin – không chia sẻ cho bên thứ ba.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section id="faq" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block bg-mint/20 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-3">❓ Câu hỏi thường gặp</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+          Ba mẹ thắc mắc gì?<br />
+          <span class="text-coral">SkillUp giải đáp tất cả</span>
+        </h2>
+      </div>
+
+      <div class="space-y-3" id="faqContainer">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="mt-10 text-center bg-cream rounded-2xl p-8" data-aos="fade-up">
+        <p class="text-gray-700 mb-3">Vẫn còn câu hỏi khác? Đừng ngại liên hệ với SkillUp nhé!</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="tel:0888940800" class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-light">📞 0888.940.800</a>
+          <a href="https://zalo.me/0888940800" target="_blank" class="bg-mint text-white px-6 py-3 rounded-full font-semibold hover:bg-mint/90">💬 Chat Zalo ngay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="bg-gradient-primary text-white pt-16 pb-8 relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-80 h-80 bg-coral/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778259359/logo_srh8nh.png" alt="SkillUp Logo" class="w-20 h-20 object-contain" />
+          <div>
+            <div class="font-extrabold text-2xl">SKILL<span class="text-coral-light">UP</span></div>
+            <div class="text-xs opacity-80">Center for Kids</div>
+          </div>
+        </div>
+
+          <p class="text-sm opacity-80 leading-relaxed">Trung tâm phát triển kỹ năng toàn diện cho trẻ em 4-12 tuổi. Học vui – Phát triển kỹ năng – Ba mẹ an tâm mỗi ngày.</p>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-sunny">Liên hệ</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3"><span>📍</span><span>35A Đường số 5, Cư xá Chu Văn An,<br />Phường Bình Thạnh, TP.HCM</span></li>
+            <li class="flex items-center gap-3"><span>📞</span><a href="tel:0888940800" class="hover:text-sunny font-bold">0888.940.800</a></li>
+            <li class="flex items-center gap-3"><span>✉️</span><a href="mailto:dvkh.skillupvn@gmail.com" class="hover:text-sunny">dvkh.skillupvn@gmail.com</a></li>
+            <li class="flex items-center gap-3"><span>🕐</span><span>Thứ 2 – Thứ 6: 7h00 – 16h30</span></li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-sunny">Bản đồ</h4>
+          <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-white/20">
+            <iframe src="https://www.google.com/maps?q=35A+Đường+số+5,+Cư+xá+Chu+Văn+An,+Bình+Thạnh,+TP.HCM&output=embed" width="100%" height="200" style="border:0;" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 pt-6 text-center text-sm opacity-70">
+        © 2026 SkillUp Center. All rights reserved. · Made with 💛 for kids in Vietnam
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== FLOAT BUTTONS (Mobile) ============== -->
+  <div class="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
+    <a href="https://zalo.me/0888940800" target="_blank" class="w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-xl pulse-ring" aria-label="Chat Zalo">
+      <span class="text-2xl">💬</span>
+    </a>
+    <a href="tel:0888940800" class="w-14 h-14 rounded-full bg-coral text-white flex items-center justify-center shadow-xl pulse-ring" aria-label="Gọi điện">
+      <span class="text-2xl">📞</span>
+    </a>
+  </div>
+
+  <!-- ============== SUCCESS MODAL ============== -->
+  <div id="successModal" class="hidden fixed inset-0 bg-black/60 z-[100] items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl" data-aos="zoom-in">
+      <div class="text-6xl mb-4 animate-bounce">🎉</div>
+      <h3 class="text-2xl font-extrabold text-primary mb-2">Đăng ký thành công!</h3>
+      <p class="text-gray-600 mb-6">Cảm ơn ba mẹ đã tin tưởng SkillUp.<br /><strong class="text-coral">SkillUp sẽ liên hệ với ba mẹ trong thời gian sớm nhất.</strong></p>
+      <div class="bg-cream rounded-xl p-4 mb-6 text-sm">
+        <p class="text-gray-600">Trong lúc chờ, ba mẹ có thể:</p>
+        <div class="flex flex-col gap-2 mt-3">
+          <a href="https://zalo.me/0888940800" target="_blank" class="bg-mint text-white py-2 rounded-lg font-semibold">💬 Chat Zalo ngay</a>
+          <a href="tel:0888940800" class="bg-primary text-white py-2 rounded-lg font-semibold">📞 Gọi 0888.940.800</a>
+        </div>
+      </div>
+      <button onclick="closeModal()" class="text-gray-500 hover:text-coral text-sm">Đóng</button>
+    </div>
+  </div>
+
+  <!-- ============== JAVASCRIPT ============== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // ⚠️⚠️⚠️ THAY URL NÀY BẰNG WEB APP URL CỦA APPS SCRIPT (xem README.md) ⚠️⚠️⚠️
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxflEdvcj4CypU2SDWGisy0_spMA3QQn0SIEYu_BNncsDmyx5haoC1tMziKD4gHlhit/exec';
+    // ===============================================================================
+
+    // Init AOS
+    AOS.init({ duration: 800, once: true, offset: 50 });
+
+    // === Mobile menu ===
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // === Header scroll effect ===
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('shadow-lg');
+        header.classList.remove('shadow-sm');
+      } else {
+        header.classList.remove('shadow-lg');
+        header.classList.add('shadow-sm');
+      }
+    });
+
+    // === Schedule data ===
+    const scheduleData = {
+      preschool: [
+        { time: '8h30 - 10h', mon: { text: 'Cờ Vua', color: 'text-red-500' }, tue: 'Luyện chữ\nLuyện đọc\nToán tư duy', wed: { text: 'Cờ Vua', color: 'text-red-500' }, thu: 'Luyện chữ\nLuyện đọc\nToán tư duy', fri: 'Luyện chữ\nLuyện đọc\nToán tư duy' },
+        { time: '10h30 - 11h', mon: 'Đọc sách', tue: 'Vui chơi tự do', wed: 'Đọc sách', thu: 'Vui chơi tự do', fri: 'Đọc sách' },
+        { time: '11h - 14h30', merged: 'Bữa trưa thư giãn 🍱' },
+        { time: '14h30 - 16h30', mon: 'Dance\nThanh nhạc\nTiếng Anh giao tiếp', tue: 'Vẽ\nthủ công', wed: 'Dance\nThanh nhạc\nTiếng Anh giao tiếp', thu: 'Vẽ\nthủ công', fri: { text: 'HAPPY FRIDAY 🎉\nLàm bánh • Movie\nTham quan • Dã ngoại', color: 'text-coral font-bold' } },
+      ],
+      primary: [
+        { time: '8h30 - 10h', mon: 'Toán tư duy\nLuyện chữ', tue: { text: 'Cờ Vua', color: 'text-red-500' }, wed: 'Toán tư duy\nLuyện chữ', thu: { text: 'Cờ Vua', color: 'text-red-500' }, fri: 'Toán tư duy\nLuyện chữ' },
+        { time: '10h30 - 11h', mon: 'Đọc sách', tue: 'Vui chơi tự do', wed: 'Đọc sách', thu: 'Vui chơi tự do', fri: 'Đọc sách' },
+        { time: '11h - 14h30', merged: 'Bữa trưa thư giãn 🍱' },
+        { time: '14h30 - 16h30', mon: 'Tiếng Anh giao tiếp\nThuyết trình', tue: 'Vẽ\nthủ công', wed: 'Dance Kid\nThanh nhạc', thu: 'Vẽ\nthủ công', fri: { text: 'HAPPY FRIDAY 🎉\nWorkshop • Talent Show\nDã ngoại • Chess Cup', color: 'text-coral font-bold' } },
+      ]
+    };
+
+    function renderSchedule(group) {
+      const tbody = document.getElementById('schedule-body');
+      const data = scheduleData[group];
+      tbody.innerHTML = data.map((row, idx) => {
+        if (row.merged) {
+          return `<tr class="${idx % 2 === 0 ? 'bg-cream' : 'bg-white'}">
+            <td class="p-4 font-bold text-primary">${row.time}</td>
+            <td colspan="5" class="p-4 text-center font-semibold text-gray-600 italic">${row.merged}</td>
+          </tr>`;
+        }
+        const cell = (data) => {
+          if (typeof data === 'string') return data.replace(/\n/g, '<br/>');
+          return `<span class="${data.color}">${data.text.replace(/\n/g, '<br/>')}</span>`;
+        };
+        return `<tr class="${idx % 2 === 0 ? 'bg-cream' : 'bg-white'}">
+          <td class="p-4 font-bold text-primary">${row.time}</td>
+          <td class="p-4 text-center text-sm">${cell(row.mon)}</td>
+          <td class="p-4 text-center text-sm">${cell(row.tue)}</td>
+          <td class="p-4 text-center text-sm">${cell(row.wed)}</td>
+          <td class="p-4 text-center text-sm">${cell(row.thu)}</td>
+          <td class="p-4 text-center text-sm bg-coral/5">${cell(row.fri)}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    function switchTab(group) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active', 'bg-coral', 'text-white');
+        b.classList.add('bg-white', 'text-primary', 'border', 'border-primary/20');
+      });
+      const activeBtn = document.getElementById('tab-' + group);
+      activeBtn.classList.add('active', 'bg-coral', 'text-white');
+      activeBtn.classList.remove('bg-white', 'text-primary', 'border', 'border-primary/20');
+      renderSchedule(group);
+    }
+
+    renderSchedule('preschool');
+
+    // === FAQ data ===
+    const faqs = [
+      { q: 'SkillUp Summer 2026 dành cho bé bao nhiêu tuổi?', a: 'Chương trình dành cho bé từ <strong>4–12 tuổi</strong>, được chia thành 2 nhóm: Tiền Tiểu Học (4–5 tuổi) và Tiểu Học (6–12 tuổi), với giáo trình phù hợp từng độ tuổi.' },
+      { q: 'Sĩ số mỗi lớp bao nhiêu bé?', a: 'Tối đa <strong>15 bé/lớp</strong> – để mỗi bé đều được cô quan tâm, gọi tên và hỗ trợ riêng. SkillUp luôn giữ vững sĩ số này dù nhu cầu đăng ký rất cao.' },
+      { q: 'Con học và chơi từ mấy giờ đến mấy giờ?', a: 'Trung tâm <strong>đón bé từ 7h sáng</strong> và <strong>tan học 16h30</strong>, từ Thứ 2 đến Thứ 6. Phụ huynh đi làm hoàn toàn yên tâm.' },
+      { q: 'Bữa ăn của bé như thế nào?', a: 'Bé được phục vụ <strong>bữa trưa dinh dưỡng</strong> với thực đơn cân bằng, đảm bảo vệ sinh an toàn thực phẩm. Có cả bữa xế nhẹ buổi chiều.' },
+      { q: 'Ba mẹ có thể ghé thăm con không?', a: 'Tất nhiên! Ba mẹ có thể ghé trung tâm <strong>bất kỳ lúc nào trong giờ học</strong> – SkillUp luôn rộng cửa đón ba mẹ, không cần báo trước.' },
+      { q: 'Mỗi ngày ba mẹ có biết con học gì không?', a: 'SkillUp gửi <strong>cập nhật Zalo mỗi ngày</strong> – bao gồm hình ảnh hoạt động, ghi chú của cô về tình hình con, bữa ăn, giấc ngủ.' },
+      { q: 'Học phí trọn gói bao nhiêu? Có chia được theo tuần không?', a: 'SkillUp có <strong>nhiều gói linh hoạt</strong>: gói 12 tuần (ưu đãi tốt nhất), gói tháng, gói tuần. Vui lòng để lại thông tin để được tư vấn chi tiết và nhận <strong>ưu đãi đến 1.500.000đ</strong> cho 10 suất đầu.' },
+      { q: 'Con cần chuẩn bị gì khi đi học?', a: 'Ba mẹ chuẩn bị: 2 cuốn tập ô ly, bút mực, bút chì, gôm, thước, bút màu, bìa nút A4, gối/mền mỏng ngủ trưa, bàn chải/kem đánh răng, 1 bộ quần áo dự phòng.' },
+      { q: 'Làm sao để đăng ký giữ ưu đãi?', a: 'Ba mẹ chỉ cần <strong>để lại thông tin tại form đăng ký</strong> hoặc <strong>gọi 0888.940.800</strong>. SkillUp sẽ liên hệ tư vấn miễn phí trong 15 phút và giữ ưu đãi cho ba mẹ ngay.' },
+    ];
+
+    const faqContainer = document.getElementById('faqContainer');
+    faqContainer.innerHTML = faqs.map((f, i) => `
+      <div class="faq-item bg-cream rounded-2xl border border-gray-100 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="${i * 50}">
+        <button onclick="toggleFaq(${i})" class="w-full flex items-center justify-between p-5 text-left">
+          <span class="font-semibold text-primary pr-4">${i + 1}. ${f.q}</span>
+          <span class="faq-icon w-8 h-8 rounded-full bg-coral text-white flex-shrink-0 flex items-center justify-center text-xl">+</span>
+        </button>
+        <div class="faq-answer px-5 pb-5 text-gray-700">${f.a}</div>
+      </div>
+    `).join('');
+
+    function toggleFaq(idx) {
+      const items = document.querySelectorAll('.faq-item');
+      items[idx].classList.toggle('active');
+    }
+
+    // === Countdown to 15/05/2026 ===
+    const targetDate = new Date('2026-05-15T23:59:59+07:00').getTime();
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = targetDate - now;
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent = '0';
+        document.getElementById('cd-hours').textContent = '0';
+        document.getElementById('cd-mins').textContent = '0';
+        document.getElementById('cd-secs').textContent = '0';
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+      document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // === Form submit ===
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = document.getElementById('submitBtn');
+      const submitText = document.getElementById('submitText');
+      const submitLoading = document.getElementById('submitLoading');
+
+      submitBtn.disabled = true;
+      submitText.classList.add('hidden');
+      submitLoading.classList.remove('hidden');
+
+      const formData = new FormData(form);
+      const monQuanTam = formData.getAll('monQuanTam');
+
+      const payload = {
+        hoTen: formData.get('hoTen'),
+        soDienThoai: formData.get('soDienThoai'),
+        tuoiBe: formData.get('tuoiBe'),
+        monQuanTam: monQuanTam,
+        nguon: 'Landing Page Chính',
+      };
+
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors', // bypass CORS preflight cho Apps Script
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        // no-cors không đọc được response, mặc định coi như thành công
+        showSuccessModal();
+        form.reset();
+      } catch (err) {
+        alert('Có lỗi xảy ra. Ba mẹ vui lòng gọi 0888.940.800 nhé!');
+      } finally {
+        submitBtn.disabled = false;
+        submitText.classList.remove('hidden');
+        submitLoading.classList.add('hidden');
+      }
+    });
+
+    function showSuccessModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // Confetti
+      for (let i = 0; i < 30; i++) {
+        const c = document.createElement('div');
+        c.className = 'confetti';
+        c.style.left = Math.random() * 100 + 'vw';
+        c.style.top = '-10px';
+        c.style.background = ['#FFD93D', '#F26B7A', '#5DD9C1', '#1E2A78'][Math.floor(Math.random() * 4)];
+        c.style.animationDelay = Math.random() * 1 + 's';
+        c.style.animationDuration = 2 + Math.random() * 2 + 's';
+        document.body.appendChild(c);
+        setTimeout(() => c.remove(), 5000);
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Close modal on backdrop click
+    document.getElementById('successModal').addEventListener('click', (e) => {
+      if (e.target.id === 'successModal') closeModal();
+    });
+  </script>
+
+</body>
+</html>
