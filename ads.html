@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillUp Summer 2026 – Ưu đãi 1.500.000đ cho 10 ba mẹ nhanh tay!</title>
+  <meta name="description" content="Bán trú hè 12 tuần cho bé 4-12 tuổi tại Bình Thạnh. Sĩ số chỉ 15 bé/lớp. Đăng ký ngay nhận ưu đãi 1.500.000đ + đồng phục + dã ngoại!" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="🌞 SkillUp Summer 2026 – Ưu đãi 1.500.000đ" />
+  <meta property="og:description" content="Bán trú hè cho bé 4-12 tuổi. 7 môn kỹ năng. Sĩ số 15 bé/lớp. Đăng ký nhận ưu đãi ngay!" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23F26B7A'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&family=Quicksand:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E2A78',
+            coral: '#F26B7A',
+            mint: '#5DD9C1',
+            sunny: '#FFD93D',
+            cream: '#FFFAF0',
+          },
+          fontFamily: {
+            sans: ['Be Vietnam Pro', 'sans-serif'],
+            display: ['Quicksand', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+    h1, h2, h3 { font-family: 'Quicksand', sans-serif; }
+
+    .bg-hero {
+      background:
+        radial-gradient(circle at 20% 20%, rgba(242,107,122,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(93,217,193,0.15) 0%, transparent 50%),
+        linear-gradient(135deg, #FFFAF0 0%, #FFF5F0 100%);
+    }
+    .bg-gradient-primary { background: linear-gradient(135deg, #1E2A78 0%, #3B4BB8 100%); }
+    .bg-gradient-coral { background: linear-gradient(135deg, #F26B7A 0%, #FFB5BC 100%); }
+
+    .btn-shine { position: relative; overflow: hidden; }
+    .btn-shine::before {
+      content: ''; position: absolute; top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: left 0.6s;
+    }
+    .btn-shine:hover::before { left: 100%; }
+
+    .pulse-ring {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(242, 107, 122, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(242, 107, 122, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(242, 107, 122, 0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up { animation: slideUp 0.8s ease forwards; }
+
+    .confetti {
+      position: absolute; width: 10px; height: 10px;
+      animation: confetti-fall 3s linear forwards;
+    }
+    @keyframes confetti-fall {
+      to { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+
+    .float-anim { animation: float 4s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-gray-800">
+
+  <!-- ============== TOP BANNER (Urgency) ============== -->
+  <div class="bg-coral text-white py-2 text-center text-xs md:text-sm font-semibold animate-pulse">
+    🔥 CHỈ CÒN <span id="banner-days" class="font-extrabold text-sunny">--</span> NGÀY – ƯU ĐÃI 1.500.000Đ KẾT THÚC SAU
+  </div>
+
+  <!-- ============== HERO + FORM ============== -->
+  <section class="bg-hero pt-8 pb-12 md:pt-12 md:pb-16">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <a href="#" class="flex items-center gap-2">
+          <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778259359/logo_srh8nh.png" alt="SkillUp Logo" class="w-20 h-20 object-contain" />
+          <div>
+            <div class="font-extrabold text-primary text-xl leading-none">SKILL<span class="text-coral">UP</span></div>
+            <div class="text-xs text-gray-500">Summer 2026</div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+        <!-- LEFT: Pitch -->
+        <div class="animate-slide-up">
+          <!-- Trust badge -->
+          <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md mb-4 border border-coral/20">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span class="text-xs font-bold text-primary">🎉 ĐANG TUYỂN SINH HÈ 2026</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary leading-tight mb-3">
+            Một mùa hè <span class="text-coral">con vui học</span> mỗi ngày
+          </h1>
+          <p class="text-lg md:text-xl text-gray-700 mb-5">
+            Bán trú hè <strong>12 tuần</strong> cho bé <strong>4–12 tuổi</strong> tại Bình Thạnh, TP.HCM
+          </p>
+
+          <!-- USP highlights -->
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="bg-white rounded-xl p-3 shadow-sm flex items-center gap-2 border border-gray-100">
+              <span class="text-2xl">👥</span>
+              <div>
+                <div class="text-xs text-gray-500">Sĩ số</div>
+                <div class="font-bold text-primary text-sm">Chỉ 15 bé/lớp</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-sm flex items-center gap-2 border border-gray-100">
+              <span class="text-2xl">🎯</span>
+              <div>
+                <div class="text-xs text-gray-500">Học</div>
+                <div class="font-bold text-primary text-sm">7 môn kỹ năng</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-sm flex items-center gap-2 border border-gray-100">
+              <span class="text-2xl">📱</span>
+              <div>
+                <div class="text-xs text-gray-500">Báo cáo</div>
+                <div class="font-bold text-primary text-sm">Zalo mỗi ngày</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-sm flex items-center gap-2 border border-gray-100">
+              <span class="text-2xl">🌅</span>
+              <div>
+                <div class="text-xs text-gray-500">Đón bé từ</div>
+                <div class="font-bold text-primary text-sm">7h – 16h30</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gift box -->
+          <div class="bg-gradient-coral rounded-2xl p-5 text-white shadow-xl mb-6 relative overflow-hidden">
+            <div class="absolute -top-6 -right-6 text-7xl opacity-20 float-anim">🎁</div>
+            <div class="relative z-10">
+              <div class="font-extrabold text-2xl md:text-3xl mb-3">🎁 Ba mẹ nhận ngay khi đăng ký:</div>
+              <ul class="space-y-2 text-sm md:text-base">
+                <li class="flex items-start gap-2"><span class="text-sunny font-bold flex-shrink-0">✓</span><span>Giảm sốc học phí <strong class="text-sunny">đến 1.500.000đ</strong></span></li>
+                <li class="flex items-start gap-2"><span class="text-sunny font-bold flex-shrink-0">✓</span><span>Tặng <strong>đồng phục SkillUp</strong> chính hãng</span></li>
+                <li class="flex items-start gap-2"><span class="text-sunny font-bold flex-shrink-0">✓</span><span>Tặng <strong>1 chuyến dã ngoại</strong> trải nghiệm</span></li>
+              </ul>
+              <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1.5 inline-block font-bold">
+                ⚡ Chỉ áp dụng cho 10 ba mẹ đầu tiên!
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini countdown -->
+          <div class="bg-white rounded-2xl p-4 shadow-md border-2 border-coral/20">
+            <div class="text-center text-sm text-gray-600 mb-2 font-semibold">⏰ Ưu đãi kết thúc sau:</div>
+            <div class="grid grid-cols-4 gap-2 text-center">
+              <div class="bg-primary text-white rounded-xl p-2">
+                <div class="text-2xl md:text-3xl font-extrabold" id="cd-days">--</div>
+                <div class="text-[10px] uppercase opacity-80">Ngày</div>
+              </div>
+              <div class="bg-primary text-white rounded-xl p-2">
+                <div class="text-2xl md:text-3xl font-extrabold" id="cd-hours">--</div>
+                <div class="text-[10px] uppercase opacity-80">Giờ</div>
+              </div>
+              <div class="bg-primary text-white rounded-xl p-2">
+                <div class="text-2xl md:text-3xl font-extrabold" id="cd-mins">--</div>
+                <div class="text-[10px] uppercase opacity-80">Phút</div>
+              </div>
+              <div class="bg-coral text-white rounded-xl p-2">
+                <div class="text-2xl md:text-3xl font-extrabold" id="cd-secs">--</div>
+                <div class="text-[10px] uppercase opacity-80">Giây</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero image (mobile only - hide on desktop) -->
+          <div class="mt-6 lg:hidden rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Trẻ em học" class="w-full h-48 object-cover" />
+          </div>
+        </div>
+
+        <!-- RIGHT: Form (sticky on desktop) -->
+        <div class="lg:sticky lg:top-4 animate-slide-up" style="animation-delay: 0.2s;">
+          <form id="registerForm" class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 border-t-4 border-coral">
+            <div class="text-center mb-5">
+              <div class="inline-block bg-sunny text-primary px-3 py-1 rounded-full text-xs font-extrabold mb-2">
+                🎁 NHẬN ƯU ĐÃI 1.500.000Đ
+              </div>
+              <h2 class="text-2xl md:text-3xl font-extrabold text-primary">Đăng ký nhận tư vấn</h2>
+              <p class="text-sm text-gray-500 mt-1">SkillUp gọi lại trong <strong class="text-coral">15 phút</strong></p>
+            </div>
+
+            <div class="space-y-3">
+              <div>
+                <input type="text" name="hoTen" required
+                       class="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-coral focus:ring-2 focus:ring-coral/20 outline-none transition text-base"
+                       placeholder="👤 Họ tên ba/mẹ *" />
+              </div>
+
+              <div>
+                <input type="tel" name="soDienThoai" required pattern="[0-9]{9,11}"
+                       class="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-coral focus:ring-2 focus:ring-coral/20 outline-none transition text-base"
+                       placeholder="📱 Số điện thoại (Zalo) *" />
+              </div>
+
+              <div>
+                <select name="tuoiBe" class="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-coral focus:ring-2 focus:ring-coral/20 outline-none transition text-base bg-white">
+                  <option value="">👶 Chọn độ tuổi của bé</option>
+                  <option value="4">4 tuổi</option>
+                  <option value="5">5 tuổi</option>
+                  <option value="6">6 tuổi</option>
+                  <option value="7">7 tuổi</option>
+                  <option value="8">8 tuổi</option>
+                  <option value="9">9 tuổi</option>
+                  <option value="10">10 tuổi</option>
+                  <option value="11">11 tuổi</option>
+                  <option value="12">12 tuổi</option>
+                </select>
+              </div>
+
+              <button type="submit" id="submitBtn"
+                      class="w-full bg-coral hover:bg-coral/90 text-white font-extrabold py-4 rounded-xl shadow-lg btn-shine text-lg transition pulse-ring">
+                <span id="submitText">🎁 ĐĂNG KÝ NHẬN ƯU ĐÃI</span>
+                <span id="submitLoading" class="hidden">⏳ Đang gửi...</span>
+              </button>
+
+              <div class="text-center text-xs text-gray-500">
+                🔒 Bảo mật thông tin · Không spam
+              </div>
+
+              <!-- Divider -->
+              <div class="flex items-center gap-3 py-1">
+                <div class="flex-1 border-t border-gray-200"></div>
+                <span class="text-xs text-gray-400">HOẶC GỌI NGAY</span>
+                <div class="flex-1 border-t border-gray-200"></div>
+              </div>
+
+              <!-- Quick contact -->
+              <div class="grid grid-cols-2 gap-2">
+                <a href="tel:0888940800" class="flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 text-sm">
+                  📞 0888.940.800
+                </a>
+                <a href="https://zalo.me/0888940800" target="_blank" class="flex items-center justify-center gap-2 bg-mint text-white py-3 rounded-xl font-bold hover:bg-mint/90 text-sm">
+                  💬 Chat Zalo
+                </a>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SOCIAL PROOF / WHY CHOOSE ============== -->
+  <section class="bg-white py-10 md:py-14">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-center text-primary mb-2">
+        Vì sao <span class="text-coral">ba mẹ</span> chọn SkillUp?
+      </h2>
+      <p class="text-center text-gray-600 mb-8">3 điều khiến SkillUp khác biệt với mọi trại hè khác</p>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-2xl p-5 text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-primary text-white flex items-center justify-center text-2xl mb-3 shadow-md">👥</div>
+          <h3 class="font-bold text-primary mb-1">Sĩ số 15 bé/lớp</h3>
+          <p class="text-sm text-gray-600">Mỗi em đều là tâm điểm của sự chú ý, được yêu thương và rèn luyện kỹ năng.</p>
+        </div>
+        <div class="bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl p-5 text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-coral text-white flex items-center justify-center text-2xl mb-3 shadow-md">📱</div>
+          <h3 class="font-bold text-primary mb-1">Cập nhật Zalo mỗi ngày</h3>
+          <p class="text-sm text-gray-600">Hình ảnh, hoạt động, bữa ăn của con sẽ được cập nhật vào cuối ngày.</p>
+        </div>
+        <div class="bg-gradient-to-br from-green-50 to-white border border-green-100 rounded-2xl p-5 text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-mint text-white flex items-center justify-center text-2xl mb-3 shadow-md">💝</div>
+          <h3 class="font-bold text-primary mb-1">Đội ngũ giáo viên yêu trẻ, tâm huyết</h3>
+          <p class="text-sm text-gray-600">Không chỉ dạy con, các cô còn lắng nghe, và đồng hành cùng con mỗi ngày.</p>
+        </div>
+      </div>
+
+      <!-- Mini gallery -->
+      <div class="grid grid-cols-4 gap-2 mt-8 max-w-3xl mx-auto">
+        <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778229760/IMG_3400_nggycb.jpg?w=300&h=300&fit=crop" alt="" class="rounded-xl aspect-square object-cover" />
+        <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778252891/3553995771745235847_bgvhv7.jpg?w=300&h=300&fit=crop" alt="" class="rounded-xl aspect-square object-cover" />
+        <img src="https://res.cloudinary.com/dadxqztlj/image/upload/v1778229760/IMG_1421_brtjou.jpg?w=300&h=300&fit=crop" alt="" class="rounded-xl aspect-square object-cover" />
+        <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778229760/IMG_1178_c1o5y9.jpg?w=300&h=300&fit=crop" alt="" class="rounded-xl aspect-square object-cover" />
+      </div>
+     
+
+      <!-- Final CTA -->
+      <div class="text-center mt-10">
+        <a href="#registerForm" class="inline-flex items-center gap-2 bg-coral hover:bg-coral/90 text-white font-extrabold px-8 py-4 rounded-full shadow-2xl btn-shine text-lg">
+          🎁 ĐĂNG KÝ NGAY – GIỮ ƯU ĐÃI
+        </a>
+        <p class="text-sm text-gray-500 mt-3">⚡ Chỉ còn <strong class="text-coral" id="cta-days">--</strong> ngày để nhận ưu đãi 1.500.000đ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER MINI ============== -->
+  <footer class="bg-gradient-primary text-white py-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="flex justify-center items-center gap-2 mb-3">
+      <img src="https://res.cloudinary.com/dadxqztlj/image/upload/q_auto/f_auto/v1778259359/logo_srh8nh.png" alt="SkillUp Logo" class="w-20 h-20 object-contain" />
+      <div class="font-extrabold text-lg">SKILL<span class="text-coral">UP</span> CENTER</div>
+    </div>
+
+      <p class="text-sm opacity-90 mb-2">📍 35A Đường số 5, CX Chu Văn An, P. Bình Thạnh, TP.HCM</p>
+      <p class="text-sm opacity-90 mb-4">📞 <a href="tel:0888940800" class="font-bold hover:text-sunny">0888.940.800</a> · ✉️ dvkh.skillupvn@gmail.com</p>
+      <div class="text-xs opacity-70">© 2026 SkillUp Center · Made with 💛 for kids</div>
+    </div>
+  </footer>
+
+  <!-- ============== FLOAT BUTTONS ============== -->
+  <div class="fixed bottom-4 right-4 z-40 flex flex-col gap-2">
+    <a href="https://zalo.me/0888940800" target="_blank"
+       class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-xl pulse-ring text-xl"
+       aria-label="Zalo">💬</a>
+    <a href="tel:0888940800"
+       class="w-12 h-12 rounded-full bg-coral text-white flex items-center justify-center shadow-xl pulse-ring text-xl"
+       aria-label="Gọi">📞</a>
+  </div>
+
+  <!-- ============== STICKY MOBILE CTA (bottom bar) ============== -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-2xl p-3 z-30 flex gap-2">
+    <a href="tel:0888940800" class="flex-1 bg-primary text-white text-center py-3 rounded-xl font-bold text-sm">📞 Gọi ngay</a>
+    <a href="#registerForm" class="flex-1 bg-coral text-white text-center py-3 rounded-xl font-bold text-sm">🎁 Đăng ký</a>
+  </div>
+
+  <!-- Spacer cho mobile sticky bar -->
+  <div class="lg:hidden h-20"></div>
+
+  <!-- ============== SUCCESS MODAL ============== -->
+  <div id="successModal" class="hidden fixed inset-0 bg-black/60 z-[100] items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl">
+      <div class="text-6xl mb-4 animate-bounce">🎉</div>
+      <h3 class="text-2xl font-extrabold text-primary mb-2">Đăng ký thành công!</h3>
+      <p class="text-gray-600 mb-5">Cảm ơn ba mẹ đã tin tưởng SkillUp.<br /><strong class="text-coral">SkillUp sẽ liên hệ trong vòng 15 phút.</strong></p>
+      <div class="flex flex-col gap-2">
+        <a href="https://zalo.me/0888940800" target="_blank" class="bg-mint text-white py-3 rounded-xl font-semibold">💬 Chat Zalo ngay</a>
+        <a href="tel:0888940800" class="bg-primary text-white py-3 rounded-xl font-semibold">📞 Gọi 0888.940.800</a>
+        <button onclick="closeModal()" class="text-gray-500 hover:text-coral text-sm mt-2">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== JAVASCRIPT ============== -->
+  <script>
+    // ⚠️⚠️⚠️ THAY URL NÀY BẰNG WEB APP URL CỦA APPS SCRIPT (giống index.html) ⚠️⚠️⚠️
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxflEdvcj4CypU2SDWGisy0_spMA3QQn0SIEYu_BNncsDmyx5haoC1tMziKD4gHlhit/exec';
+    // =================================================================================
+
+    // === Countdown to 15/05/2026 ===
+    const targetDate = new Date('2026-05-15T23:59:59+07:00').getTime();
+    function updateCountdown() {
+      const diff = targetDate - Date.now();
+      if (diff <= 0) return;
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff / 3600000) % 24);
+      const mins = Math.floor((diff / 60000) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      const set = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = String(val).padStart(2, '0');
+      };
+      set('cd-days', days);
+      set('cd-hours', hours);
+      set('cd-mins', mins);
+      set('cd-secs', secs);
+      const setRaw = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+      };
+      setRaw('banner-days', days);
+      setRaw('cta-days', days);
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // === Form submit ===
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = document.getElementById('submitBtn');
+      const submitText = document.getElementById('submitText');
+      const submitLoading = document.getElementById('submitLoading');
+
+      submitBtn.disabled = true;
+      submitText.classList.add('hidden');
+      submitLoading.classList.remove('hidden');
+
+      const formData = new FormData(form);
+      const payload = {
+        hoTen: formData.get('hoTen'),
+        soDienThoai: formData.get('soDienThoai'),
+        tuoiBe: formData.get('tuoiBe'),
+        monQuanTam: ['Toàn bộ chương trình bán trú'],
+        nguon: 'Landing Page Quảng Cáo (ads.html)',
+      };
+
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        showSuccessModal();
+        form.reset();
+
+        // Track conversion (tuỳ chỉnh nếu có Facebook Pixel/GA)
+        if (typeof fbq !== 'undefined') fbq('track', 'Lead');
+        if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-XXXXX/XXXX' });
+      } catch (err) {
+        alert('Có lỗi xảy ra. Ba mẹ vui lòng gọi 0888.940.800 nhé!');
+      } finally {
+        submitBtn.disabled = false;
+        submitText.classList.remove('hidden');
+        submitLoading.classList.add('hidden');
+      }
+    });
+
+    function showSuccessModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // Confetti
+      const colors = ['#FFD93D', '#F26B7A', '#5DD9C1', '#1E2A78'];
+      for (let i = 0; i < 30; i++) {
+        const c = document.createElement('div');
+        c.className = 'confetti';
+        c.style.left = Math.random() * 100 + 'vw';
+        c.style.top = '-10px';
+        c.style.background = colors[Math.floor(Math.random() * colors.length)];
+        c.style.animationDelay = Math.random() + 's';
+        c.style.animationDuration = (2 + Math.random() * 2) + 's';
+        document.body.appendChild(c);
+        setTimeout(() => c.remove(), 5000);
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.getElementById('successModal').addEventListener('click', (e) => {
+      if (e.target.id === 'successModal') closeModal();
+    });
+
+    // ============= TRACKING SCRIPTS PLACEHOLDER =============
+    // 👇 Khi chạy quảng cáo, paste Facebook Pixel + Google Tag ở đây
+    // Facebook Pixel:
+    // !function(f,b,e,v,n,t,s) { ... } window.fbq = ...; fbq('init', 'YOUR_PIXEL_ID');
+    //
+    // Google Ads / GA4:
+    // <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXX"></script>
+    // gtag('config', 'G-XXXXX');
+  </script>
+
+</body>
+</html>
